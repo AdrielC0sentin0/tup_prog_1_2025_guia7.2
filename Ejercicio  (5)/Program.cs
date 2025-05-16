@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,26 +10,24 @@ namespace Guia_7._2
     {
         static void Main(string[] args)
         {
-            double num, mayor, i;
-
-            Console.WriteLine(" Ingrese un numero 1 ");
+            double num, menor, i;
+            Console.WriteLine(" Ingresar el numero 1 ");
             num = Convert.ToDouble(Console.ReadLine());
 
-            mayor = num;
+            menor = num;
 
             for (i = 2; i <= 5; i++)
             {
-                Console.WriteLine(" Ingrese un numero " + i);
+                Console.WriteLine(" Ingresar el numero " + i);
                 num = Convert.ToDouble(Console.ReadLine());
 
-                if (num > mayor)
+                if (num < menor)
                 {
-                    mayor = num;
+                    menor = num;
+
                 }
-
             }
-
-            Console.WriteLine("El numero: "+ mayor+ " Es Mayor");
+            Console.WriteLine("El numero: "+ menor+ " Es Menor");
         }
     }
 }
